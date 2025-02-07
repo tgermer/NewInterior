@@ -129,6 +129,7 @@ h3 {
     font-weight: 400;
     line-height: 2.4rem; /* 133.333% */
     transition: background-color .2s linear;
+    text-align: center;
 }
 
 .btn:hover {
@@ -488,6 +489,10 @@ footer button {
 @media screen and (max-width: 37.5rem ) {
     body {
         /* background-color: blue; */
+    }
+
+    h1 {
+        text-align: center;
     }
 
     .gallery {
