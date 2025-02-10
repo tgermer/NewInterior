@@ -529,16 +529,9 @@ footer button {
     }
 }
 
-/* Parallax für iPhones unterbinden */
-@media screen and (max-width: 768px) and (-webkit-overflow-scrolling: touch) {
+/* Parallax Effect auf iOS Geären unterbinden. */
+@supports (-webkit-overflow-scrolling: touch) {
     .services, .quote, .contact {
-        background-attachment: scroll;
-    }
-}
-
-/* Parallax für iPads unterbinden */
-@media screen and (min-width: 768px) and (-webkit-overflow-scrolling: touch) {
-    .services, .quote, .contact {
-        background-attachment: scroll;
+        background-attachment: scroll; /* Auf iOS immer scroll verwenden */
     }
 }
